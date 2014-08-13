@@ -93,36 +93,36 @@ footer p, footer a { color: white; padding: 0; font-size: 18px; }
 
 /* Specific background settings */
 .canal {
-  background-image: url(images/garonne.jpg);
+  background-image: url(../images/garonne.jpg);
 }
 
 .countryside {
-  background-image: url(images/countryside.jpg);
+  background-image: url(../images/countryside.jpg);
 }
 
 .cross {
-  background-image: url(images/cross-3.jpg);
+  background-image: url(../images/cross-3.jpg);
   height: 850px;
 }
 
 .moissac {
-  background-image: url(images/moissac.jpg);
+  background-image: url(../images/moissac.jpg);
 }
 
 .walk {
-  background-image: url(images/walking.jpg);
+  background-image: url(../images/walking.jpg);
 }
 
 .endure {
-  background-image: url(images/endure.jpg);
+  background-image: url(../images/endure.jpg);
   height: 850px;
 }
 
 .argh {
-  background-image: url(images/argh.jpg);
+  background-image: url(../images/argh.jpg);
 }
 
 .tire {
-  background-image: url(images/tire.jpg);
+  background-image: url(../images/tire.jpg);
   height: 750px;
 }
