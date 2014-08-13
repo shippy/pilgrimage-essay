@@ -127,3 +127,8 @@ footer p, footer a { color: white; padding: 0; font-size: 18px; }
   background-image: url(../images/tire.jpg);
   height: 750px;
 }
+
+.tire p {
+  bottom: auto;
+  top: 0;
+}
