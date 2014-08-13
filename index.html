@@ -1,0 +1,192 @@
+
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pilgrim's Path: Absolutely Authentic!</title>
+		<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family: garamond, helvetica, arial;
+			padding-top: 40px;
+		}
+
+		.content {width: 1280px; margin: 0 auto; }
+
+		h1 {
+			background-color: black;
+			color: white;
+			height: 40px;
+			font-size: 24px;
+			font-weight: normal;
+			left: 0;
+			line-height: 40px;
+			position: fixed;
+			text-align: center;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+			padding: 20px 0;
+		}
+		h1 a {
+			border-bottom: 1px solid white;
+			color: white;
+			display: inline-block;
+			line-height: 30px;
+			text-decoration: none;
+		}
+
+		p {
+			padding: 0 50px;
+			margin: 30px 0;
+			font-size: 24px;
+		}
+		.slideshow, .to-do {
+			width: 100%;
+			overflow-x: scroll;
+			overflow-y: hidden;
+			background-color: black;
+		}
+
+		.slideshow { overflow: hidden; }
+		.to-do, footer {
+			padding: 20px 70px;
+			margin: 10px 0 0;
+			background-color: black;
+		}
+
+		.slideshow img { border: 2px solid black; }
+		.slideshow img:hover { border: 2px solid white; }
+
+		footer {margin-bottom: 0; }
+		footer p, footer a { color: white; padding: 0; font-size: 18px; }
+
+		.wide img { width: 240px; height: 200px; }
+
+		.tall img { width: 150px; height: 200px; }
+
+		.photo {
+			background-attachment: fixed;
+			background-position: 50% 0;
+			background-repeat: no-repeat;
+			height: 600px;
+			position: relative;
+		}
+		.photo span, .photo p {
+			bottom: 0;
+			color: white;
+			display: block;
+			left: 50%;
+			margin-left: -640px;
+			font-size: 24px;
+			padding: 20px 50px;
+			position: absolute;
+			text-shadow: 0 2px 0 black, 0 0 10px black;
+			width: 1200px;
+		}
+
+		.canal {
+			background-image: url(images/garonne.jpg);
+		}
+
+		.countryside {
+			background-image: url(images/countryside.jpg);
+		}
+
+		.cross {
+			background-image: url(images/cross-3.jpg);
+			height: 850px;
+		}
+
+		.moissac {
+			background-image: url(images/moissac.jpg);
+		}
+
+		.walk {
+			background-image: url(images/walking.jpg);
+		}
+
+		.endure {
+			background-image: url(images/endure.jpg);
+			height: 850px;
+		}
+
+		.argh {
+			background-image: url(images/argh.jpg);
+		}
+
+		.tire {
+			background-image: url(images/tire.jpg);
+			height: 750px;
+		}
+
+		</style>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/lightbox.min.js"></script>
+
+		<link href="css/lightbox.css" rel="stylesheet" />
+
+		<script>
+		$(function(){
+			$.stellar({
+				horizontalScrolling: false,
+				verticalOffset: 40
+			});
+		});
+		</script>
+	</head>
+	<body>
+		<div class="content">
+		<h1>Pilgrim's Path: Absolutely Authentic!</h1>
+
+		<div class="photo cross" data-stellar-background-ratio="0.5"><p>You wake up at 6am on a bed too soft for a true pilgrim, to the alarm clock that a true pilgrim would not need. You decide against wearing a nice collared shirt: you don't want to be the preppiest peregrino on the road. Breakfast, and then off you go, after you take four pictures of the sun rising behind a cross. You remind yourself that the cross is part of your pilgrim pretense, and you try to psych yourself up. Austerity! Contrition! Sacred remains! Yay!</p></div>
+		<p>It takes you three hours to get walking. First, you break fast with pilgrims. Then, you analyze Anne Carson and Gideon Lewis-Krauss. You derive deep wisdom from both: primarily, how happy you are to walk without a Cid and unhappy to walk without a Tom. Finally, you set off. On the <em>camino!</em></p>
+		<p>(Well, not really the <em>camino!</em>, because the <em>camino!</em> takes a little more than the twenty kilometres from Moissac to Auvillar. It also lasts more than four hours. But still. <em>Camino!</em>)</p>
+		<div class="photo moissac" data-stellar-background-ratio="0.5"><p>Half an hour into the four-hour journey, a view of Moissac opens up to you. You think back to the vintage portrait of the area, from 1825, by a British gentleman named Joseph Hardy. Hardy would write about this overlook, and title the chapter <em>The Picturesque and Descriptive View of Moissac, Comprising Three Paragraphs.</em><sup>1</sup> He would spare no expense to express how indescribable it was, how unworthy he was of even attempting the task, and how he must defer to the descriptive powers of the author of <em>Highways and Byways of France</em>. (The latter, who Hardy would helpfully quote, would also refuse to describe it, but would paint the refusal in a far more flowery language.) To spite him, you vow to be economical and say nothing about it at all.</p></div>
+		<p><sup>1</sup> The full name of the 1825 treatise is <em>A picturesque and descriptive tour in the mountains of the High Pyrenees: comprising twenty-four views of the most interesting scenes, from original drawings taken on the spot; with some account of the bathing establishments in that department of France.</em> It’s pithy.</p>
+		<div class="photo canal" data-stellar-background-ratio="0.5"><p>Two hours into the four-hour journey, your group splits off. Some already pushed forward; others wanted to take the shady, low-altitude canal route. You feel that you can make up for your fraudulence by overcoming some elevation, so you join the group that makes for the hills.</p></div>
+		<p>The group consists of, in the order of height, Elaina, Hayley, Adriana, you, Colleen, and Zach. Your to-do list for the camino is as follows:</p>
+	</div>
+
+	<!-- Figure out a clean way to scroll -->
+	<div class="slideshow">
+		<div class="to-do">
+			<a href="images/selfie.jpg" class="thumbnail wide" data-lightbox="to-do" data-title="Take a selfie with a genuine <em>camino!</em> cow"><img src="images/selfie.jpg" /></a>
+			<a href="images/exhausted.jpg" class="thumbnail tall" data-lightbox="to-do" data-title="Experience genuine pain."><img src="images/exhausted.jpg" /></a>
+			<a href="images/hand-of-god.jpg" class="thumbnail wide" data-lightbox="to-do" data-title="Become a god to puny molluscs."><img src="images/hand-of-god.jpg" /></a>
+			<a href="images/own-joke.jpg" class="thumbnail tall" data-lightbox="to-do" data-title="Laugh at your own jokes."><img src="images/own-joke.jpg" /></a>
+			<a href="images/plum.jpg" class="thumbnail wide" data-lightbox="to-do" data-title="Scavenge whatever roadside fruits you can."><img src="images/plum.jpg" /></a>
+<!-- 			<a href="images/scarecrow.jpg" class="thumbnail tall" data-lightbox="to-do" data-title="Dress at least half as well as a French scarecrow."><img src="images/scarecrow.jpg" /></a> -->
+			<a href="images/back-breaking.jpg" class="thumbnail wide" data-lightbox="to-do" data-title="Have your back broken by Elaina the Chiropractor."><img src="images/back-breaking.jpg" /></a>
+		</div>
+	</div>
+	<div class="content">
+		<p>Three hours in, you watch the markings turn from red-and-white to yellow. You pay it no mind. During an extended lunch break, you eat the apples and plums and prunes you scavenged. <em>Camino!</em>
+		</p>
+		<div class="photo countryside" data-stellar-background-ratio="0.5">
+			<p>Five hours into the four-hour journey, realize that you have strayed from the path. Take pride in the seriousness with which you continue walking. If the camino takes more than four hours, and this trip is taking more than four hours, that means you're doing the camino, right? And your feet hurt. You basically <em>are</em> the son of Zebedee. Future pilgrims will journey to <em>your</em> remains!
+			</p>
+		</div>
+		<p>Six hours in, run out of water. And breath. Feast. On tomatoes and fruit loops. You're in France; need-based resource redistribution is chic; so, drink some of Hayley's water. She’s shorter than you, so she doesn’t need it as much. It's cool, until she runs out of it, too. You pass abandoned villages in the afternoon heat, wish for <em>eau potable</em>, and find none.</p>
+		<div class="photo argh" data-stellar-background-ratio="0.5"></div>
+		<div class="photo walk" data-stellar-background-ratio="0.5">
+			<p>Seven hours in, become desperate. For bearings, for nourishment, for sunscreen. As you waltz into the village of Lalande on hurting feet, having devoured an unripe melon that tasted like an unripe cucumber, you decide that enough is enough. You pound the windows of a closed restaurant, which should be opened, goddamit! until they do open and sell you plain water at a price that could match Aspen’s. Drink it while mentally composing snarky Puente la Reina parallels. <em>Camino?</em></p>
+		</div>
+		<p>Kinds of water cost a fortune. Ha ha.</p>
+		<p>Eight hours in, you lose Colleen and Adriana to a blister the size of Andorra. (You hope that your detour won’t actually take you to Andorra. Your laughter at that joke marks how deeply you have fallen.) Leaving nothing to chance, you forsake the low-tech nature of your pilgrimage and use a GPS-enabled phone for directions. To keep the view fresh, you make up inspirational four-syllable chants and open your eyes on every other quartet. <em>Pain is not real.</em> You pass the first entrance to Valence, lured by the sign towards Auvillar. <em>I will write more.</em> You do not realize that the signed path marks the easy road for cars, not the short path. <em>I will write home.</em> Elm trees and sunflowers line the road. <em>I’m a starfish.</em></p>
+		<div class="photo endure" data-stellar-background-ratio="0.5"></div>
+		<p>Nine and a half hours in, you spot the familiar bridge on the border of Auvillar. You cross it and carefully consider the pain-gain trade-off of jumping for joy.
+</p>
+		<p>No jumping.</p>
+		<p>But ten hours in and twelve hours after getting up, you do jump: into the cold swimming pool, to relieve your hurting feet and sunburnt limbs. (Take that account of a bathing establishment, Hardy!) Real pilgrims don’t get to swim around on their veranda at the end of the day, but you feel as though you made up for your fakeness with your spectacular inability to follow directions. The tear and wear, the exhaustion and pain: they build you up, until you feel twice as tall as Colleen and almost as tall as Zach.
+</p>
+		<p><em>Camino!</em></p>
+		<div class="photo tire" data-stellar-background-ratio="0.5" margin-bottom: 0;></div>
+	</div>
+	<footer style="margin-top: 0;"><p>By <a href="http://simon.podhajsky.net/">Simon Podhajsky</a>. Built with <a href="http://markdalgleish.com/projects/stellar.js/">Stellar.js</a> <a href="http://markdalgleish.com/projects/stellar.js/demos/backgrounds.html">parallax backgrounds</a> and <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox.js</a>.</p>
+	</body>
+</html>
