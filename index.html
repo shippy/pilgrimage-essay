@@ -6,12 +6,15 @@
 
     <title>Pilgrim's Path: Absolutely Authentic!</title>
 
-    <link href="css/lightbox.css" rel="stylesheet" />
+    <!-- <link href="css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/> -->
     <link href="css/screen.css" rel="stylesheet" />
 
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/lightbox.min.js"></script>
+    <!-- <script src="js/lightbox.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+    <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
 
     <script>
       $(function(){
@@ -28,7 +31,7 @@
       <div class="photo cross" data-stellar-background-ratio="0.5">
         <p>You wake up at 6am on a bed too soft for a true pilgrim, to the alarm clock that a true pilgrim would not need. You decide against wearing a nice collared shirt: you don't want to be the preppiest <em>peregrino</em> on the road. Breakfast, and then off you go, after you take four pictures of the sun rising behind a cross. You remind yourself that the cross is part of your pilgrim pretense, and you try to psych yourself up. Austerity! Contrition! Sacred remains! Yay!</p>
       </div>
-      <p>It takes you three hours to get walking. First, you break fast with pilgrims. Then, you analyze Anne Carson and Gideon Lewis-Krauss. You derive deep wisdom from both: primarily, how happy you are to walk without a Cid and unhappy to walk without a Tom. Finally, you set off. On the <em>camino!</em></p>
+      <p>It takes you three hours to get walking. First, you break your fast with pilgrims. Then, you analyze Anne Carson and Gideon Lewis-Krauss. You derive deep wisdom from both: primarily, how happy you are to walk without a Cid and unhappy to walk without a Tom. Finally, you set off. On the <em>camino!</em></p>
       <p>(Well, not really the <em>camino!</em>, because the <em>camino!</em> takes a little more than the twenty kilometres from Moissac to Auvillar. It also lasts more than four hours. But still. <em>Camino!</em>)</p>
       <div class="photo moissac" data-stellar-background-ratio="0.5">
         <p>Half an hour into the four-hour journey, a view of Moissac opens up to you. You think back to the vintage portrait of the area, from 1825, by a British gentleman named Joseph Hardy. Hardy would write about this overlook, and title the chapter <em>The Picturesque and Descriptive View of Moissac, Comprising Three Paragraphs.</em><sup>1</sup> He would spare no expense to express how indescribable it was, how unworthy he was of even attempting the task, and how he must defer to the descriptive powers of the author of <em>Highways and Byways of France</em>. (The latter, who Hardy would helpfully quote, would also refuse to describe it, but would paint the refusal in a far more flowery language.) To spite him, you vow to be economical and say nothing about it at all.</p>
@@ -38,19 +41,38 @@
         <p>Two hours into the four-hour journey, your group splits off. Some already pushed forward; others wanted to take the shady, low-altitude canal route. You feel that you can make up for your fraudulence by overcoming some elevation, so you join the group that makes for the hills.</p>
       </div>
       <div class="photo group" data-stellar-background-ratio="0.5">
-        <p>The group consists of, in the order of height, Elaina, Hayley, Adriana, you, Colleen, and Zach. Your to-do list for the camino is as follows:</p>
+        <p>The group consists of, in the order of height, Elaina, Hayley, Adriana, you, Colleen, and Zach.</p>
       </div>
+      <p>Your to-do list for the camino is as follows:</p>
     </div>
-
-    <div class="slideshow">
-      <div class="to-do">
-        <a href="images/selfie.jpg" class="thumbnail wide" data-lightbox="to-do" data-title="Take a selfie with a genuine <em>camino!</em> cow"><img src="images/selfie.jpg" /></a>
-        <a href="images/exhausted.jpg" class="thumbnail tall" data-lightbox="to-do" data-title="Experience genuine pain."><img src="images/exhausted.jpg" /></a>
-        <a href="images/hand-of-god.jpg" class="thumbnail wide" data-lightbox="to-do" data-title="Become a god to puny molluscs."><img src="images/hand-of-god.jpg" /></a>
-        <a href="images/own-joke.jpg" class="thumbnail tall" data-lightbox="to-do" data-title="Laugh at your own jokes."><img src="images/own-joke.jpg" /></a>
-        <a href="images/plum.jpg" class="thumbnail wide" data-lightbox="to-do" data-title="Scavenge whatever roadside fruits you can."><img src="images/plum.jpg" /></a>
-        <a href="images/scarecrow.jpg" class="thumbnail tall" data-lightbox="to-do" data-title="Dress at least half as well as a French scarecrow."><img src="images/scarecrow.jpg" /></a>
-        <a href="images/back-breaking.jpg" class="thumbnail wide" data-lightbox="to-do" data-title="Have your back broken by Elaina the Chiropractor."><img src="images/back-breaking.jpg" /></a>
+    <div class="to-do" id="cycle">
+      <div class="thumbnail wide">
+        <img src="images/selfie.jpg">
+        <p>Take a selfie with a genuine <em>camino!</em> cow.</p>
+      </div>
+      <div class="thumbnail tall">
+        <img src="images/exhausted.jpg">
+        <p>Experience genuine pain.</p>
+      </div>
+      <div class="thumbnail wide">
+        <img src="images/hand-of-god.jpg">
+        <p>Become a god to puny molluscs.</p>
+      </div>
+      <div class="thumbnail tall">
+        <img src="images/own-joke.jpg">
+        <p>Laugh at your own jokes.</p>
+      </div>
+      <div class="thumbnail wide">
+        <img src="images/plum.jpg">
+        <p>Scavenge whatever roadside fruits you can.</p>
+      </div>
+      <div class="thumbnail tall">
+        <img src="images/scarecrow.jpg">
+        <p>Dress at least half as well as a French scarecrow.</p>
+      </div>
+      <div class="thumbnail wide">
+        <img src="images/back-breaking.jpg">
+        <p>Have your back broken by Elaina the Chiropractor.</p>
       </div>
     </div>
     <div class="content">
@@ -58,8 +80,10 @@
       <div class="photo countryside" data-stellar-background-ratio="0.5">
         <p>Five hours into the four-hour journey, realize that you have strayed from the path. Take pride in the seriousness with which you continue walking. If the <em>camino</em> takes more than four hours, and this trip is taking more than four hours, that means you're doing the <em>camino</em>, right? And your feet hurt. You basically <em>are</em> the son of Zebedee. Future pilgrims will journey to <em>your</em> remains!</p>
       </div>
-      <p>Six hours in, run out of water. And breath. Feast. On tomatoes and fruit loops. You're in France; need-based resource redistribution is chic; so, drink some of Hayley's water. She’s shorter than you, so she doesn’t need it as much. It's cool, until she runs out of it, too. You pass abandoned villages in the afternoon heat, wish for <em>eau potable</em>, and find none.</p>
-      <div class="photo argh" data-stellar-background-ratio="0.5"></div>
+
+      <div class="photo argh" data-stellar-background-ratio="0.5">
+        <p>Six hours in, run out of water. And breath. Feast. On tomatoes and fruit loops. You're in France; need-based resource redistribution is chic; so, drink some of Hayley's water. She’s shorter than you, so she doesn’t need it as much. It's cool, until she runs out of it, too. You pass abandoned villages in the afternoon heat, wish for <em>eau potable</em>, and find none.</p>
+      </div>
       <div class="photo walk" data-stellar-background-ratio="0.5">
         <p>Seven hours in, become desperate. For bearings, for nourishment, for sunscreen. As you waltz into the village of Lalande on hurting feet, having devoured an unripe melon that tasted like an unripe cucumber, you decide that enough is enough. You pound the windows of a closed restaurant, which should be open, goddammit! until they do open and sell you plain water at a price that could match Aspen’s. Drink it while mentally composing snarky Puente la Reina parallels. <em>Camino?</em></p>
       </div>
@@ -68,15 +92,24 @@
       <div class="photo endure" data-stellar-background-ratio="0.5"></div>
       <p>Nine and a half hours in, you spot the familiar bridge on the border of Auvillar. You cross it and carefully consider the pain-gain trade-off of jumping for joy.</p>
       <p>No jumping.</p>
-      <p>But ten hours in and twelve hours after getting up, you do jump: into the cold swimming pool, to relieve your hurting feet and sunburnt limbs. (Take that account of a bathing establishment, Hardy!) Real pilgrims don’t get to swim around on their veranda at the end of the day, but you feel as though you made up for your fakeness with your spectacular inability to follow directions. The tear and wear, the exhaustion and pain: they build you up, until you feel twice as tall as Colleen and almost as tall as Zach.</p>
+      <div class="photo pool" data-stellar-background-ratio="0.5">
+        <p>But ten hours in and twelve hours after getting up, you do jump: into the cold swimming pool, to relieve your hurting feet and sunburnt limbs. (Take that account of a bathing establishment, Hardy!) Real pilgrims don’t get to swim around on their veranda at the end of the day, but you feel as though you made up for your fakeness with your spectacular inability to follow directions. The tear and wear, the exhaustion and pain: they build you up, until you feel twice as tall as Colleen and almost as tall as Zach.</p>
+      </div>
       <div class="photo tire" data-stellar-background-ratio="0.5" margin-bottom: 0;>
         <p><em>Camino!</em></p>
       </div>
     </div>
     <footer>
       <p>
-        By <a href="http://simon.podhajsky.net/">Simon Podhajsky</a>. Built with <a href="http://markdalgleish.com/projects/stellar.js/">Stellar.js</a> <a href="http://markdalgleish.com/projects/stellar.js/demos/backgrounds.html">parallax backgrounds</a> and <a href="http://lokeshdhakar.com/projects/lightbox2/">Lightbox.js</a>.
+        By <a href="http://simon.podhajsky.net/">Simon Podhajsky</a>. Built with <a href="http://markdalgleish.com/projects/stellar.js/">Stellar.js</a> <a href="http://markdalgleish.com/projects/stellar.js/demos/backgrounds.html">parallax backgrounds</a> and <a href="http://jquery.malsup.com/cycle/">Cycle.js</a>.
       </p>
     </footer>
+
+    <script type="text/javascript">
+        $('#cycle').cycle({
+    fx:     'fade',
+    delay:  -2000
+});
+    </script>
   </body>
 </html>
