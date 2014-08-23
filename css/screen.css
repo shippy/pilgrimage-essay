@@ -52,7 +52,7 @@ sup { vertical-align: top; font-size: 0.6em; }
 
 .to-do {
   margin: 20px auto !important;
-  height: 500px; width: 350px;
+  height: 600px; width: 350px;
 }
 
 /* .slideshow { overflow: hidden; white-space: nowrap; } */
@@ -65,7 +65,7 @@ sup { vertical-align: top; font-size: 0.6em; }
 .thumbnail {
   margin: 0 auto;
   width: 350px;
-  margin: 20px 70px;
+  margin: 70px 70px;
   height: 500px;
   vertical-align: center;
 }
@@ -91,11 +91,9 @@ sup { vertical-align: top; font-size: 0.6em; }
 footer {margin: 0; }
 footer p, footer a { color: white; padding: 0; font-size: 18px; }
 
-.wide img { width: 350px; height: 300px; }
-.wide p { width: 350px; }
+.wide img { width: 350px; height: 233px; }
 
-.tall img { width: 350px; height: 450px; }
-.tall p { width: 350px; }
+.tall img { width: 350px; height: 493px; }
 
 /* Backgrounds */
 
